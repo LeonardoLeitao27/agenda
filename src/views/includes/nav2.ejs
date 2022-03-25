@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand " href="/">Agenda</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+        
+      </ul>
+      
+        <ul class="navbar-nav ml-0 ">
+
+          <li class="nav-item ">
+            <a class="nav-link " href="/contato/index">Cadastrar contato</a>
+          </li>
+    
+    
+          <% if(user) { %>
+    
+          <li class="nav-item ">
+            <a class="nav-link " href="/login/logout">sair</a>
+          </li>
+    
+          <% } else{ %>
+    
+            <li class="nav-item ">
+              <a class="nav-link " href="/login/index">Entrar</a>
+            </li>
+            <% } %>
+         
+        </ul>
+      
+    </div>
+  </div>
+</nav>
